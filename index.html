@@ -3,37 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Puestos de la Plaza</title>
+    <title>CENTRAL MAPS</title>
+
+    <style>
+        /* ======== ESTILOS GENERALES ======== */
+        body {
+            margin: 0;
+            height: 100vh;
+            background: url("central.png") center 20% / cover no-repeat;
+            font-family: "Verdana", sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            background: rgba(0, 0, 0, 0.75);
+            color: white;
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #000;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        /* ======== BOTONES ======== */
+        button {
+            width: 12px;
+            height: 12px;
+            cursor: pointer;
+            border-radius: 50%;
+            background-color: yellow;
+            border: 1px solid #333;
+            box-shadow: 0 0 4px rgba(0,0,0,0.5);
+            transition: transform 0.2s, background-color 0.2s;
+            position: absolute;
+        }
+
+        button:hover {
+            transform: scale(1.4);
+            background-color: #ffea00;
+        }
+
+        /* ======== POSICIONES EXACTAS ======== */
+        #boton1  { top: 500px; left: 210px; }
+        #boton2  { top: 500px; left: 350px; }
+        #boton3  { top: 500px; left: 500px; }
+        #boton4  { top: 390px; left: 500px; }
+        #boton5  { top: 410px; left: 390px; }
+        #boton6  { top: 430px; left: 290px; }
+        #boton7  { top: 450px; left: 190px; }
+        #boton8  { top: 420px; left: 220px; }
+        #boton9  { top: 410px; left: 290px; }
+        #boton10 { top: 400px; left: 360px; }
+        #boton11 { top: 380px; left: 420px; }
+    </style>
+
 </head>
-<body style="margin:0; background-image: url('fondo50.png'); background-size:cover; background-repeat:no-repeat; background-position:center 20%;">>
+
+<body>
 
 <header>
-    <h1 align="center">
-  <span style="color:red; background-color:white; font-size:40px;">Puesto 50</span>
-    </h1>
+    <h1>CENTRAL MAPS</h1>
 </header>
 
-<div class="contenedor">
-    <div id="listaPuestos"></div>
+<!-- Botones -->
+<button id="boton1"  onclick="location.href='tienda50.html'"></button>
+<button id="boton2"  onclick="location.href='tienda49.html'"></button>
+<button id="boton3"  onclick="location.href='tienda48.html'"></button>
+<button id="boton4"  onclick="location.href='tienda47.html'"></button>
+<button id="boton5"  onclick="location.href='tienda46.html'"></button>
+<button id="boton6"  onclick="location.href='tienda45.html'"></button>
+<button id="boton7"  onclick="location.href='tienda44.html'"></button>
+<button id="boton8"  onclick="location.href='tienda43.html'"></button>
+<button id="boton9"  onclick="location.href='tienda42.html'"></button>
+<button id="boton10" onclick="location.href='tienda41.html'"></button>
+<button id="boton11" onclick="location.href='tienda40.html'"></button>
 
-    <div id="visor">
-	<center>
-        <img id="puesto50" src="puesto50.png" alt="Imagen del puesto 50">
-		</center>
-    </div>
-</div>
-  <p align="center">
-  <span style="color:red; background-color:white; font-size:24px;">El puesto 50 de la central de abastos de Villa Guerrero ofrece:</span>
-  </p>
-<center>
-  <ul style="background-color: white; font-size:20px; color:red; padding: 24px; display: inline-block;">
-    <li>Gerbera roja</li>
-    <li>Rosa roja y rosa</li>
-    <li>Tulipanes rojos</li>
-  </ul>
-  <p align="center">
-  <span style="color:red; background-color:white; font-size:24px;">Más informacion al telefono</span> <span style="color:blue; background-color:white; font-size:24px;"> #7371963982</span>
-  </p>
-</center>
 </body>
 </html>
